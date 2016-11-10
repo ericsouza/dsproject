@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="theme-color" content="#BF3220">
+		<title>Default</title>
+		<link rel="stylesheet" href="css/framework7.material.min.css">
+		<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+		<link rel="stylesheet" href="css/kitchen-sink.css">
+		<link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+	</head>
+
+	<body class="theme-red">
+		
+		<div class="panel-overlay"></div>
+		
+		<div class="panel panel-right panel-cover">
+			<div class="navbar">
+				  <div class="navbar-inner">
+					<div class="left"></div>
+					<div class="center">Opções</div>
+					<div class="right">
+						<a href="#" data-panel="right" class="link icon-only close-panel">
+							<i class="icon icon-close"></i>
+						</a>
+					</div>
+				  </div>
+				</div>
+			<div class="content-block-title">Menu</div>
+			<div class="list-block inset">
+				<ul>
+					<li>
+					<a href="#" data-popup=".popup-perfil" class="item-link item-content close-panel open-popup">
+				        <div class="item-inner">
+				          <div class="item-title">Meu perfil</div>
+				        </div>
+				    </a>
+				  	</li>
+				  	<li>
+					<a href="#" class="item-link item-content close-panel">
+				        <div class="item-inner">
+				          <div class="item-title">Plano de estudos</div>
+				        </div>
+				    </a>
+				  	</li>
+				  	<li>
+					<a href="#" data-popup=".popup-estm" class="item-link item-content close-panel open-popup">
+				        <div class="item-inner">
+				          <div class="item-title">Estudar matemática</div>
+				        </div>
+				    </a>
+				  	</li>
+				  	<li>
+					<a href="#" class="item-link item-content close-panel open-popup">
+				        <div class="item-inner">
+				          <div data-popup=".popup-estq" class="item-title">Estudar química</div>
+				        </div>
+				    </a>
+				  	</li>
+					<div class="content-block">
+						<p><a href="#" class="button button-fill" onclick="myApp.showIndicator(); window.location.href='index.html';">Desconectar</a></p>
+					</div>
+			  	</ul>
+			</div>
+		  </div>
+	  
+		<div class="views">
+		  <div class="view view-main">
+			<div class="pages navbar-fixed">
+			  <div data-page="index" class="page">
+	 
+				<div class="navbar">
+				  <div class="navbar-inner">
+					<div class="left"></div>
+					<div class="center">Aplicativo de DS</div>
+					<div class="right">
+						<a href="#" data-panel="right" class="link icon-only open-panel">
+							<i class="icon icon-bars"></i>
+						</a>
+					</div>
+				  </div>
+				</div>
+	 
+				<div class="page-content">
+					<div class="card ks-card-header-pic">
+					<div style="background-image: url('images/1matematica.jpg')" valign="bottom" class="card-header color-white no-border">Matemática</div>
+					<div class="card-content">
+					</div>
+					<div class="card-footer"><a href="#" data-popup=".popup-estm" class="button open-popup">Estudar já</a></div>
+					</div>
+					
+					<div class="card ks-card-header-pic">
+					<div style="background-image: url('images/1quimica.jpg')" valign="bottom" class="card-header color-white no-border">Química</div>
+					<div class="card-content">
+					</div>
+					<div class="card-footer"><a href="#" data-popup=".popup-estq" class="button open-popup">Estudar já</a></div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+
+		
+		<div class="popup popup-estm">
+			<div class="views">
+				<div class="view view-main">
+					<div class="pages">
+						<div class="page">
+							<div class="tabs-animated-wrap">
+							<div class="tabs">
+								<div id="mtab1" class="tab ">
+								<div class="navbar">
+								  <div class="navbar-inner">
+									<div class="left"></div>
+									<div class="center">Estudar</div>
+									<div class="right"><a class="link tab-link icon-only close-popup">
+											<i class="icon icon-close"></i>
+										</a></div>
+								  </div>
+								</div>
+								<div class="page-content">
+								<div class="list-block">
+									<ul>
+									<li>
+									<a href="#mtab2" class="tab-link item-link item-content">
+										<div class="item-inner">
+										  <div class="item-title">Geometria analítica</div>
+										</div>
+									</a>
+									</li>
+									</ul>
+								</div>
+								</div>
+								</div>
+								<div id="mtab2" class="tab">
+								<div class="navbar">
+							  <div class="navbar-inner">
+								<div class="left"><a href="#mtab1" class="link tab-link icon-only">
+										<i class="icon icon-back"></i>
+									</a></div>
+								<div class="center">Geometria Analítica</div>
+								<div class="right"><a href="#mtab1" class="link tab-link icon-only close-popup">
+										<i class="icon icon-close"></i>
+									</a></div>
+							  </div>
+							</div>
+								<div class="page-content">
+								<div class="list-block inset">
+									<ul>
+									<li>
+									<a href="#" onclick="linkvideo = 'SEGRy9152ik';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Distância entre dois pontos</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'MwIPwwiV0ko';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Coordenadas do ponto médio</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'A6TGMjVd6I';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Alinhamento de 3 pontos</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'met9D7B_Nso';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Equação por coefiente angular e um ponto</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = '_3c-0MiMgRk';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Equação reduzida e geral da reta</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'bL3mfA7vj2U';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Equação por dois pontos</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'PuTqP6nfhTM';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Paralelismo e perpendicularidade entre reta</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'bdC0SACOgUk';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Intersecção entre duas retas</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'kJGzPyi4BxQ';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Distância entre um ponto e uma reta</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'b4vivIKk8ZM';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Equação da circunferência</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = '0qsv9Xuj3Is';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Equação normal da circunferência</div>
+										</div>
+									</a>
+									</li>
+									</ul>
+								</div>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup-estq">
+			<div class="views">
+				<div class="view view-main">
+					<div class="pages">
+						<div class="page">
+							<div class="tabs-animated-wrap">
+							<div class="tabs">
+								<div id="qtab1" class="tab ">
+								<div class="navbar">
+								  <div class="navbar-inner">
+									<div class="left"></div>
+									<div class="center">Estudar</div>
+									<div class="right"><a class="link tab-link icon-only close-popup">
+											<i class="icon icon-close"></i>
+										</a></div>
+								  </div>
+								</div>
+								<div class="page-content">
+								<div class="list-block">
+									<ul>
+									<li>
+									<a href="#qtab2" class="tab-link item-link item-content">
+										<div class="item-inner">
+										  <div class="item-title">Reações Orgânicas</div>
+										</div>
+									</a>
+									</li>
+									</ul>
+								</div>
+								</div>
+								</div>
+								<div id="qtab2" class="tab">
+								<div class="navbar">
+							  <div class="navbar-inner">
+								<div class="left"><a href="#qtab1" class="link tab-link icon-only">
+										<i class="icon icon-back"></i>
+									</a></div>
+								<div class="center">Reações Orgânicas</div>
+								<div class="right"><a href="#qtab1" class="link tab-link icon-only close-popup">
+										<i class="icon icon-close"></i>
+									</a></div>
+							  </div>
+							</div>
+								<div class="page-content">
+								<div class="list-block inset">
+									<ul>
+									<li>
+									<a href="#" onclick="linkvideo = 'V8umbw0gvfQ';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Reação de Adição I</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = '6lxvPHKe2js';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Reação de Adição II</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = '3wk3EfD0QO8';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Reações de substituição em aromáticas</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'k3wxm-kBsyM';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Reação de esterificação</div>
+										</div>
+									</a>
+									</li>
+									<li>
+									<a href="#" onclick="linkvideo = 'ZLmDMcbGIOw';" class="item-link item-content pb-standalone-video">
+										<div class="item-inner">
+										  <div class="item-title">Reações orgânicas de substituição</div>
+										</div>
+									</a>
+									</li>
+									</ul>
+								</div>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup-perfil">
+			<div class="views">
+				<div class="view view-main">
+					<div class="pages navbar-fixed">
+						<div class="page">
+							<div class="navbar">
+							  <div class="navbar-inner">
+								<div class="left"></div>
+								<div class="center">Meu perfil</div>
+								<div class="right"><a class="link icon-only tab-link close-popup">
+										<i class="icon icon-close"></i>
+									</a></div>
+							  </div>
+							</div>
+							<div class="page-content">
+								<div class="content-block-title">Minhas informações</div>
+								<div class="list-block">
+									<ul>
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+										  <div class="item-title">Email</div>
+										</div></a>
+									  <div class="accordion-item-content">
+										<div class="content-block inset">
+										  <p><div id="email"></div></p>
+										</div>
+									  </div>
+									</li>
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+										  <div class="item-title">Desconectar</div>
+										</div></a>
+									  <div class="accordion-item-content">
+										<div class="content-block inset">
+										  <p><a href="#" class="button button-fill" onclick="myApp.showIndicator(); window.location.href='index.html';">Confirmar</a></p>
+										</div>
+									  </div>
+									</li>
+									</ul>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/framework7.min.js"></script>
+		<script type="text/javascript" src="js/myapp.js"></script>
+	</body>
+</html>

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="red">
+	<meta name="theme-color" content="#BF3220">
+	<title>Default</title>
+	<link rel="stylesheet" href="css/framework7.material.min.css">
+	<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+	<link rel="stylesheet" href="css/kitchen-sink.css">
+	<link rel="stylesheet" href="css/extra.css">
+</head>
+
+  <body class="theme-red">
+  
+	<div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <div data-page="index" class="page">
+			<div class="toolbar tabbar toolbar-bottom">
+				<div class="toolbar-inner">
+					<a href="#" data-popup=".popup-cadastro" class="link open-popup">Cadastrar</a>
+					<a href="#" class="link color-orange" onclick="logIn();">Entrar</a>
+				</div>
+			</div>
+ 
+            <div class="page-content">
+				<div class="list-block inset">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Email</div>
+								<div class="item-input item-input-field">
+									<input type="text" id="email">
+								</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Senha</div>
+								<div class="item-input item-input-field">
+									<input type="password" id="senha">
+								</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="popup popup-cadastro">
+	<div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <div data-page="index" class="page">
+ 			<div class="toolbar toolbar-bottom">
+				<a href="#" class="link" onclick="Cadastrar();">CONFIRMAR</a>
+			</div>
+
+            <div class="page-content">
+				 <div class="content-block-title"><h1>Cadastre-se já!</h1></div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Email</div>
+								<div class="item-input item-input-field">
+									<input type="text" id="cademail" required="true" >
+								</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Nome</div>
+								<div class="item-input item-input-field">
+									<input type="text" id="cadnome">
+								</div>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Senha</div>
+								<div class="item-input item-input-field">
+									<input type="password" id="cadsenha" required="true">
+								</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+								<div class="item-title floating-label">Confirmar senha</div>
+								<div class="item-input item-input-field">
+									<input type="password" id="cadsenha2">
+								</div>
+								</div>
+							</div>
+						</li> 
+						<li style="padding-top: 5%">
+							<p class="buttons-row">
+								<p><a href="#" class="button ripple-red button-big close-popup">Voltar</a></p>
+							</p>
+						</li>
+					</ul>
+					</div>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+	
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/myapp.js"></script>
+
+  </body>
+</html>
